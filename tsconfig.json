@@ -1,0 +1,25 @@
+// tsconfig.json Controls how TypeScript compiles code (e.g., import, JSON, type checks)
+
+// It tells the TypeScript compiler how to: Understand your project structure, Compile your .ts files, Handle JSON, modules, and libraries. It’s required in any TypeScript project.
+{
+  "compilerOptions": {               // Settings for how the TypeScript compiler (tsc) behaves.
+    "target": "ES2020",              // Output compiled JavaScript using ES2020 features (like optional chaining, nullish coalescing, etc).
+    "resolveJsonModule": true,       // Allows you to import .json files
+    "module": "CommonJS",            // Uses Node.js-compatible modules, Recommended for backend/testing environments
+    "moduleResolution": "Node",      // Resolves modules like Node.js does — by looking through folders (node_modules, etc)
+    "strict": true,                  // Enables all strict type-checking features, Helps avoid bugs, forces good practices.
+    "esModuleInterop": true,         // Allows default import xyz from 'module' even if that module uses module.exports.
+    "skipLibCheck": true,            // Skips type checking inside node_modules.Makes builds faster and avoids irrelevant errors.
+    "forceConsistentCasingInFileNames": true, // Prevents errors where you write MyFile.ts vs myfile.ts on different OSes.
+    "outDir": "dist",                //
+    "rootDir": "./",
+    "types": ["node", "playwright"]
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [                       // Don’t waste time type-checking compiled or installed code
+    "node_modules",
+    "dist"
+  ]
+}

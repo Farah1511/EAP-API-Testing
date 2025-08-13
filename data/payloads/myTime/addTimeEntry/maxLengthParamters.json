@@ -1,0 +1,17 @@
+{
+	"entryId": 0,
+	"selectedDate": "2024-01-04T00:00:00",
+	"checkIn": "2024-01-04T09:00:00",
+	"checkout": "2024-01-04T18:00:00",
+	"totalHours": "9.00",
+	"hourCode": "*HOLIDAYASDFZXCVBNMLKJHGQWERTYUIOP0987654321",
+	"assignmentNumber": "12-10012-856-001",
+	"payCycleId": 2050804149870896546789383,
+	"payCycleStartDate": "2024-01-28T00:00:00",
+	"payCycleEndDate": "2024-02-10T00:00:00",
+	"entryStatus": "",
+	"comment": "",
+	"taskName": "*Holiday",
+	"payDate": "2024-02-16T00:00:00",
+	"payCycleNo": 3
+}
